@@ -1,20 +1,89 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<meta charset="UTF-8">
-<title>我的作品集</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
-<style>
-</style>
-<script src=""></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>我的作品集</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <script src="assets/js/main.js"></script> -->
+</head>
+
 <body>
+    <header>
+        <nav>
+            <div class="nav_left">
+                <h1>赛博炼金术师的作品集</h1>
+            </div>
+            <div class="nav_right">
+                <a href="../index.html">首页</a>
+                <p> 我的作品 </p> <!-- 这里想弄一个鼠标悬浮在这里时出现下拉菜单，可以选择5个作品，然后跳转到对应页面 -->
+            </div>
+        </nav>
+    </header>
 
-<img src="assets/img/Profile.png" alt="我的头像" style="width:100%">
+    <main>  
+        <div class="left">
+            <img class="avatar" src="assets/img/avatar.png" alt="我的头像">
+            <h2>赛博炼金术师</h2>
+            <p>我是一个游戏设计师和游戏开发者。</p>
+        </div>
 
-<div class="">
- <h1>我的作品集</h1>
- <p>这是我的作品集，展示我的游戏设计和开发能力。</p>
-</div>
+        <div class="right">
+            <h2>我的作品</h2>
+            <div class="card">
+                <a href="works/work1.html">
+                    <img class="card_image" src="assets/img/placeholders/work1.jpg" alt="我的1号作品" loading="lazy">
+                    <div class="card_content">
+                        <h3>作品一：台式肉燥鸡扒饭</h3>
+                        <p>这是 AC1 食堂的台式肉燥鸡扒饭</p>
+                    </div>
+                </a>
+            </div>
 
+            <div class="card">
+                <a href="works/work2.html">
+                    <img class="card_image" src="assets/img/placeholders/work2.jpg" alt="我的2号作品" loading="lazy">
+                    <div class="card_content">
+                        <h3>作品二</h3>
+                        <p>这是我作品集中的第2个作品</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="works/work3.html">
+                    <img class="card_image" src="assets/img/placeholders/work3.jpg" alt="我的3号作品" loading="lazy">
+                    <div class="card_content">
+                        <h3>作品三</h3>
+                        <p>这是我作品集中的第3个作品</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="works/work4.html">
+                    <img class="card_image" src="assets/img/placeholders/work4.jpg" alt="我的4号作品" loading="lazy">
+                    <div class="card_content">
+                        <h3>作品四</h3>
+                        <p>这是我作品集中的第4个作品</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="works/work5.html">
+                    <img class="card_image" src="assets/img/placeholders/work5.jpg" alt="我的5号作品" loading="lazy">
+                    <div class="card_content">
+                        <h3>作品五</h3>
+                        <p>这是我作品集中的第5个作品</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p> &copy; 2026 赛博炼金术师</p>
+    </footer>
 </body>
 </html>
