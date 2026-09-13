@@ -22,6 +22,8 @@
   --font-body: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 
+* { margin: 0; box-sizing: border-box; }
+
 body {
   background-color: var(--color-bg);
 }
@@ -46,32 +48,27 @@ p {
     font-family: var(--font-body);
 }
 
-main {
-  display: grid;
-  grid-template-columns: 300px 1fr;  /* 左列固定 300px，1fr = 剩余空间全给右列 */
-  gap: 48px;
-  max-width: 1080px;
-  margin: 0 auto;                    /* 整块居中 */
-  padding: 32px 24px;
-  align-items: start;                /* 两列各自从顶部开始，不互相拉伸 */
+a {
+  text-decoration: none;
 }
-@media (max-width: 768px) {   /* 视口 ≤768px 时生效 */
-  main { grid-template-columns: 1fr; }
+a:hover {
+  color: var(--color-primary);
 }
-
 
 /* For navigation bar */
 .nav-menu{
     background-color: var(--color-surface);
     box-shadow: var(--shadow-soft);
     width: 100%;
-    height: 80px;
+    padding: 16px 32px;
 
     list-style: none;
     display: flex;
     gap: 24px;
     align-items: center;
     justify-content: space-around;
+    position: sticky;
+    top: 0;
 }
 
 .dropdown{
@@ -85,6 +82,18 @@ main {
 .nav-menu li:focus-within .dropdown { display: block; } /* 键盘 Tab 聚焦到菜单内任一链接 */
 
 /* For index.html */
+main:has(.left) {
+  display: grid;
+  grid-template-columns: 300px 1fr;  /* 左列固定 300px，1fr = 剩余空间全给右列 */
+  gap: 48px;
+  max-width: 1080px;
+  margin: 0 auto;                    /* 整块居中 */
+  padding: 32px 24px;
+  align-items: start;                /* 两列各自从顶部开始，不互相拉伸 */
+}
+@media (max-width: 768px) {   /* 视口 ≤768px 时生效 */
+  main { grid-template-columns: 1fr; }
+}
 
 .avatar{
     width: 160px;
@@ -122,6 +131,14 @@ main {
 }
 
 /* For specific work pages */
+main {
+  gap: 48px;
+  max-width: 1080px;
+  margin: 0 auto;                    /* 整块居中 */
+  padding: 32px 24px;
+  align-items: start;                /* 两列各自从顶部开始，不互相拉伸 */
+}
+
 .work_image{
     width: 600px;
     height: 400px;
