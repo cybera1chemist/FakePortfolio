@@ -2,6 +2,7 @@
 
 body {
   background-color: black;
+  overflow: hidden;
 }
 
 h3{
@@ -22,14 +23,16 @@ h3{
     object-fit: contain;
     object-position: center;
     cursor: pointer;
+    transition: all 0.25s ease;
 }
 
 @keyframes eyeZoom {
   from { transform: scale(1); 
-        transform-origin: 47% 65%;}   /* scale(1) 原始大小 */
-  to   { transform: scale(30) rotate(-90deg); 
-        transform-origin: 47% 65%;}  /* scale(30) 放大30倍 */
+        transform-origin: 47% 65%;}
+  to   { transform: scale(30) rotate(-90deg);
+        transform-origin: 47% 65%;}
 }
+
 
 .eye-zoom {
   animation: eyeZoom 4s ease-in forwards;
